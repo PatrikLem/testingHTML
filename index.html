@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0}
+
+.icon-bar {
+  width: 60px;
+  background-color: #555;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.1s ease;
+  color: yellow;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #ff0000;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div>
+</body>
+
+
+
+<style>
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+  background-color: #ff0000;
+  padding: 10px;
+}
+.container > div {
+  background-color: rgba(255, 200, 255, 0.5);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header"><h2>Test</h2></div>
+  <div class="menu"><img src="apple.jpg" alt="Apple"></div>
+  <div class="content"><h3>Grid layout</h3><p>Grid layout is a grid based layout sytem with rows and columns. It is two dimensional compared to the flexbox layout which is only one dimensional and has rows or columns not both. You can make complex stuff with these layouts.</p></div>
+  <div class="footer"><h4>The grid layouts consist of grid containers and grid items in the containers.</h4></div>
+</div>
+
+</body>
+</html> 
